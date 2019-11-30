@@ -4,7 +4,8 @@ module.exports = {
     stats: "verbose",
     mode:"development",
     entry: {
-        quadratic: './src/quadratic.ts'
+        quadratic: './src/quadratic.ts',
+        beziercurve:'./src/beziercurve.ts'
     },
     devtool: 'inline-source-map',
     module: {

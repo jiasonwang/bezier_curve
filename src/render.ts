@@ -35,13 +35,11 @@ export default class Render {
 
         }
     }
-
-    renderQuadBeziercure(points: Array<Position>) {
-
-    }
     finish() {
         this.ctx.closePath();
+        let result = Array.from(this.points);
         this.points = [];
+        return result;
     }
     clean() {
         this.ctx.clearRect(0, 0, this.width, this.height);

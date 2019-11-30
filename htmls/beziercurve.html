@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>三次贝塞尔曲线</title>
-    </head>
-    <body>
-        Hellow world
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>三次贝塞尔曲线</title>
+</head>
+
+<body>
+    <p><input type="checkbox" id="save" />保存绘制点</p>
+    <p><input type="number" id="distance" value="1" />点距离</p>
+    <p><input type = "button" id = "startRender" value="绘制三次贝塞尔"/></p>
+    <p><input type = "button" id = "clean" value="清除"/></p>
+    <div id="root" style="width:1080px;height:2040px; background-color: aquamarine;">
+        <canvas id="render" width="1080" height="2040">
+            不可能显示的。
+        </canvas>
+    </div>
+</body>
+<script src="../dist/beziercurve.js">
+
+</script>
+
 </html>
